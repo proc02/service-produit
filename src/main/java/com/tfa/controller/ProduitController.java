@@ -38,6 +38,6 @@ public class ProduitController {
     @ResponseStatus(HttpStatus.OK)
     @GetMapping
     public ResponseEntity <List<ProduitEntity>> obtenirProduits() {
-        return null;
+        return ResponseEntity.ok (service.obtenirProduits ());
     }
 }
